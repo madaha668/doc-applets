@@ -1,0 +1,10 @@
+4c4,5
+< from transformers import Qwen2_5_VLProcessor, AutoProcessor
+---
+> from transformers import AutoProcessor
+> from transformers.models.qwen2_vl.processing_qwen2_vl import Qwen2VLProcessor
+69c70,71
+< class DotsVLProcessor(Qwen2_5_VLProcessor):
+---
+> #class DotsVLProcessor(Qwen2_5_VLProcessor):
+> class DotsVLProcessor(Qwen2VLProcessor):
